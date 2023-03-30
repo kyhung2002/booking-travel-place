@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-body text-base font-normal mx-auto;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  input {
+    @apply outline-none;
+  }
+  .container {
+    @apply max-w-[1750px] px-4 mx-auto;
+  }
+}
+
+.quill {
+  .ql-editor {
+    @apply p-4 font-body text-base;
+  }
+}
+.gradient-banner {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+.scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
