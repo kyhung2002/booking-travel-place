@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
   body {
-    @apply font-body text-base font-normal mx-auto;
+    @apply font-body text-base font-normal bg-graySoft;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -13,7 +13,7 @@
     @apply outline-none;
   }
   .container {
-    @apply max-w-[1750px] px-4 mx-auto;
+    @apply w-full max-w-[1280px] px-4 py-10 mx-auto;
   }
 }
 
@@ -41,4 +41,71 @@
 }
 .scroll-hidden::-webkit-scrollbar {
   display: none;
+}
+.skeleton {
+  background-color: #e2e5e7;
+
+  background-image: linear-gradient(90deg, rgba(#fff, 0), rgba(#fff, 0.5), rgba(#fff, 0));
+  background-size: 40px 100%;
+  background-repeat: no-repeat;
+  background-position: left -40px top 0;
+  animation: shine 1s ease infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: right -40px top 0;
+  }
+}
+// Config swiper
+
+.swiper-container {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 350) {
+  .swiper-container {
+    width: 350;
+  }
+}
+@media screen and (min-width: 480) {
+  .swiper-container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 640) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1024) {
+  .swiper-container {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1336) {
+  .swiper-container {
+    width: 1336px;
+  }
+}
+.swiper {
+  padding: 40px 20px !important;
+}
+// Config faq
+.faq-row-wrapper {
+  .faq-title {
+    @apply font-bold;
+  }
+
+  .faq-body {
+    .faq-row {
+      .row-title {
+      }
+
+      .row-content {
+        .row-content-text {
+        }
+      }
+    }
+  }
 }

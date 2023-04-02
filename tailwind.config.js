@@ -3,8 +3,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('../public/images/booking.png')",
+        'blog': "url('../public/images/banner.jpg')",
+      },
       fontFamily: {
         body: ["Montserrat", "sans-serif;"],
+        title: ['PT Sans', 'sans-serif']
       },
       colors: {
         primary: "#1DC071",

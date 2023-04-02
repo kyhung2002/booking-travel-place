@@ -7,6 +7,9 @@ import './index.scss';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './store/configureStore';
 
+
+// Import Swiper styles
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 
