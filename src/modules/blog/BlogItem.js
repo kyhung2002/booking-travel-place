@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const BlogItem = ({ to = "" }) => {
     return (
         <Link to={to} className="w-full p-4 bg-white rounded-lg shadow-lg">
-            <BookingImage></BookingImage>
+            <BookingImage className="h-[250px] xl:h-[300px]"></BookingImage>
             <div className="py-4">
                 <BookingTitle>Powered Kits Learning Boxes</BookingTitle>
                 <BookingDesc>Fun, durable and reusable boxes with eco-friendly options.</BookingDesc>

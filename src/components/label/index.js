@@ -1,2 +1,2 @@
-export { default as Label } from "./Label";
-export { default as LabelStatus } from "./LabelStatus";
+export const { default: Label } = require("./Label");
+export const { default: LabelStatus } = require("./LabelStatus");

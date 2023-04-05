@@ -30,10 +30,10 @@ const Header = () => {
     }, [isFixed]);
     return (
         <header className={`h-[78px] container flex justify-between items-center relative transition-all duration-300 ease-in-out ${isFixed ? "!fixed right-0 left-0 bg-whiteSoft  h-[60px] z-50 shadow-lg rounded-lg" : ""}`}>
-            <Link className="w-[40px] h-[40px] lg:w-[52px] lg:h-[52px] flex-shrink-0">
-                <img src="./logo.png" alt="booking-trip" className='w-full h-full' />
+            <Link className="w-[40px] h-[40px] lg:w-[52px] lg:h-[52px] flex-shrink-0" to="/">
+                <img src="/logo.png" alt="booking-trip" className='w-full h-full' />
             </Link>
-            <div className="w-full sm:max-w-[450px] sm:block hidden">
+            <div className="w-full sm:max-w-[450px] md:block hidden">
                 <HeaderSearch></HeaderSearch>
             </div>
             <div className="flex items-center">
@@ -65,7 +65,7 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="flex items-center gap-x-5">
-                        <Button type="button" href="/sign-up" kind="primary" >Sign up</Button>
+                        <Button type="button" href="/sign-up" kind="primary" className="ml-3" >Sign up</Button>
                         <div className="block lg:hidden" onClick={() => dispatch(setModalOn(!isOpen))}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
